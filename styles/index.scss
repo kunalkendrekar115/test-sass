@@ -47,6 +47,7 @@ html {
     background-color: $sidebar-bgColor;
     width: 220px;
     height: 100%;
+    overflow: auto;
     box-sizing: border-box;
     z-index: 200;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
@@ -145,4 +146,9 @@ html {
       margin-top: 20px;
     }
   }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
